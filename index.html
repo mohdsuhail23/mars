@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Space Interiors</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           box-sizing: border-box;
+        }
+    
+        
+        @font-face {
+            font-family: 'Deradioh';
+            src: url('./font/Deradioh.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'EurostileBQ';
+            src: url('./font/EurostileBQ-Extended.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Futura';
+            src: url('./font/FuturaBkBTBook.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Deradioh' !important;
+           
+        }
+        p{
+            font-family: 'EurostileBQ' !important;
+        }
+        #main {
+            background-image: url('./images/Homepage.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            margin-top: 0;
+        }
+        #logo {
+            width: 80px !important;
+            margin-top: -25px !important;
+        }
+        #btn {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+         a>span{
+            font-size: 25px;
+        }
+        #What {
+            background-image: url('./images/construtin.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #Project{
+            background-image: url('./images/crane.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #Partners {
+            background-image: url('./images/PartnersBg.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #Projects {
+            background-image: url('./images/projectbg.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #partnersImage {
+            width: 1000px;
+            height: 1200px;
+            object-fit: cover;
+        }
+        #projectFg {
+            width: 800px;
+            height: 800px;
+            object-fit: cover;
+        }
+        #sub {
+            background-image: url('./images/subiusdiary.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            height: 20vh;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        #sub:hover {
+            filter: grayscale(0%);
+        }
+        #Jack {
+            background-image: url('./images/JACKADVERBG.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            height: 80vh;
+        }
+        #jackFg {
+            width: 800px;
+            height: 700px;
+            object-fit: cover;
+            margin-top: -150px;
+        }
+        footer {
+            background-image: url('./images/footer.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            /* height: 40vh; Reduced height */
+            background-size: 100% 100%; /* Reduced width */
+            height: 100vh;
+        }
+        #gov{
+            background-image: url('./images/UAE-GOVT-APPROVEL-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .text {
+            transform: translateX(-50%);
+            font-weight: bold;
+            /* color: #ffb400; */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .text:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .texts:hover{
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .text:hover::before {
+            content: "[";
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+        .text:hover::after {
+            content: "]";
+            transition: all 0.3s ease-in-out;
+            margin-left: 10px;
+        }
+        #textForD{
+            font-family: 'Deradioh' !important;
+            font-size: 26;
+            font-weight: 100;
+        }
+        #textForE{
+            font-family: 'EurostileBQ' !important;
+            font-size: 110px;
+            font-weight: 100;
+            color: #fcfad8;
+        }
+        #textForP{
+            font-family: 'Futura' !important;
+            font-size: 25px;
+            font-weight: 100;
+            color: #fcfad8;
+        }
+
+        .mouse-icon {
+            opacity: 0.8;
+            animation: mouse-scroll 1.5s infinite;
+        }
+        @keyframes mouse-scroll {
+            0% { transform: translateY(0); opacity: 0.8; }
+            50% { transform: translateY(10px); opacity: 0.4; }
+            100% { transform: translateY(0); opacity: 0.8; }
+        }
+  
+        /* for mobile */
+
+        @media only screen and (max-width: 600px){
+     
+
+            #main {
+            background-image: url('./imagesformobile/homepage.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 0;
+            
+        }
+
+
+        #textForE{
+            
+            font-size: 45px;
+            
+        }
+
+        #textForP{
+            font-size: 15px;
+        }
+        #What {
+            background-image: url('./imagesformobile/whatweoffer.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            
+        }
+        #Project{
+            background-image: url('./imagesformobile/150project.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #Partners { 
+            background-image: url('./imagesformobile/whyusbackground.jpg'); /* Replace with your actual image */
+            background-size: cover;
+           
+        }
+
+        #partnersImage {
+            
+            object-fit: cover;
+            width: 300px;
+            height: 150px;
+        }
+        #gov{
+            background-image: url('./images/UAE-GOVT-APPROVEL-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        #Projects {
+            background-image: url('./imagesformobile/seamlessandhighqualitybg.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        footer {
+            background-image: url('./imagesformobile/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+         
+            
+        }
+
+        }
+
+
+    </style>
+</head>
+<body class="text-white font-sans">
+    <div id="main">
+        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full mt-8">
+            <nav>
+                <ul class="flex space-x-24">
+                    <li><a href="./">
+                        <span class="text" id="textForD">
+                            Home
+                        </span>
+                    </a></li>
+                    <li><a href="./services.html">
+                        <span class="text" id="textForD">
+                            Services
+                        </span>
+                    </a></li>
+                    <li><a href="./project.html">
+                        <span class="text" id="textForD">
+                            Projects
+                        </span>
+                    </a></li>
+                    <img id="logo" src="./images/logo.png" alt="">
+                    <li><a href="#gov">
+                        <span class="text" id="textForD">
+                            Authority Approval
+                        </span>
+                    </a></li>
+                    <li><a href="./career.html">
+                        <span class="text" id="textForD">
+                            Career
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- Mobile Header -->
+<div class="md:hidden mt-4  fixed w-full top-0 left-0 z-50 flex items-center justify-between px-4 py-4 bg-transparent backdrop-blur-sm">
+    <!-- Logo -->
+    <img src="./images/logo.png" alt="Logo" class="h-10">
+  
+    <!-- Menu Toggle Button -->
+    <button id="mobile-menu-btn">
+      <!-- Hamburger Icon -->
+      <svg id="hamburger-icon" class="w-9 h-9 text-[#fcfad8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Close Icon (hidden by default) -->
+      <svg id="close-icon" class="w-9 h-9 text-[#fcfad8] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Sidebar (from right) -->
+  <div id="mobile-sidebar" class="fixed top-0 right-0 w-64 h-full bg-transparent backdrop-blur-lg transform translate-x-full transition-transform duration-300 z-40 p-6 space-y-6">
+    <a href="./" class="block  mt-16 texts   text-lg">Home</a>
+    <a href="./services.html" class="block texts text-lg">Services</a>
+    <a href="./project.html" class="block texts text-lg">Projects</a>
+    <a href="#gov" class="block texts  text-lg">Authority Approval</a>
+    <a href="./career.html" class="block texts  text-lg">Career</a>
+  </div>
+  <!-- Overlay (optional, transparent effect) -->
+  <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden z-30"></div>
+
+
+  <!--  hero section-->
+
+        
+        <main class="flex flex-col md:justify-center  h-screen md:px-16 px-3 md:ml-[250px] ml-5">
+            <h1 class="sm:text-9xl mt-[12rem]  font-light sm:mt-[3.5rem]" id="textForE">MARS</h1>
+            <p class="mt-4 sm:text-[25px] text-[18px] sm:w-full w-[200px] text-justify" style="font-family:'Futura' !important; font-weight: 100; color: #fcfbd9;"  >At Mars Space Interiors, we design visionary, <br class="hidden sm:block"> sustainable spaces that redefine living.</p>
+      
+            <a href="tel:+971589653760">
+                <button class=" sm:text-[15px] px-1 py-1 sm:px-6 sm:py-3 sm:w-[230px] w-[120px] text-[10px] bg-white text-black  uppercase tracking-widest shadow-lg  mt-10 sm:mt-[216px]   hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                    Schedule A Call
+                </button>
+            </a>
+            <div class="absolute   bottom-6 right-[50%] ">
+                <img src="./svg/Asset-101.svg" alt="" width="30px" class=" mouse-icon">
+            </div>
+    
+        </main>
+
+        <aside class="absolute  sm:space-y-24  space-y-20 sm:right-8 right-[25%] sm:bottom-[23rem] bottom-[10rem] mt-15 sm:mt-0 text-lg sm:mr-[150px] mr-3 text-[#fcfad8]">
+            
+            <div class="mb-2 mr-8 sm:mr-0 inline-block sm:block text-2xl transition-transform duration-500" id="num1">00</div>
+            <div class="mb-2 mr-8 sm:mr-0 inline-block sm:block text-2xl transition-transform duration-500" id="num2">00</div>
+            <div class="mb-2  inline-block sm:block text-2xl transition-transform duration-500" id="num3">00</div>
+        
+        </aside>
+        <aside class="hidden sm:block absolute md:mt-[-50px]  mr-[30px] right-4 text-lg ">
+            <div class="mb-2 md:text-2xl text-lg">BUILD BEYOND</div>
+        </aside>
+    </div>
+
+    <!-- what we offer section  //completed -->
+
+    <div id="What" class="">
+        <section class="flex justify-center items-center sm:h-screen h-full">
+            <div class="flex flex-1 flex-col items-start p-8 sm:mt-[-150px] mt-0 sm:ml-[100px]">
+            <h2 class="sm:text-[70px] text-[18px] font-light sm:mt-0 mt-3" style="color: #fcfad8;">What We Offer</h2>
+            <p class="mt-4 sm:text-lg text-xs" id="textForP">Crafting innovative and personalized interiors that <br> inspire and elevate everyday living.</p>
+            <a href="./services.html">
+
+                <button class="sm:mt-6 sm:px-6  px-1 py-1 sm:py-3 sm:w-[230px] w-[100px] text-[12px] sm:text-lg bg-white text-black font-medium uppercase tracking-widest shadow-lg sm:mt-[216px] mt-[5rem] hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                    Read More
+                </button>
+            </a>
+            </div>
+            <!-- <div class="flex-1 h-screen">
+                <img src="./images/WHATWE.png" alt="What We Do" class="w-[3500px] h-full object-cover">
+            </div> -->
+        </section>
+    </div>
+
+
+
+  <!-- project section -->
+
+    <div id="Project">
+        <section class="flex justify-center items-center sm:h-screen h-full">
+            <div class="flex flex-1 flex-col items-start p-8 sm:mt-[50px] sm:ml-[100px] my-10 sm:my-0 ">
+            <h2 class="sm:text-[70px] text-[18px] font-light" style="color: #fcfad8;">
+                <span id="PNO" class="sm:text-9xl text-[18px]">0</span>
+                
+                <span class="sm:text-9xl text-[18px]">+</span><br> Projects
+            </h2>
+            <script>
+                function animateNumber(element, start, end, duration) {
+                    let startTimestamp = null;
+                    const step = (timestamp) => {
+                        if (!startTimestamp) startTimestamp = timestamp;
+                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                        element.textContent = Math.floor(progress * (end - start) + start);
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        }
+                    };
+                    window.requestAnimationFrame(step);
+                }
+
+                function isElementInViewport(el) {
+                    const rect = el.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    const pnoElement = document.getElementById('PNO');
+                    const onScroll = () => {
+                        if (isElementInViewport(pnoElement)) {
+                            animateNumber(pnoElement, 0, 150, 2000); // Animate from 0 to 150 in 2 seconds
+                            window.removeEventListener('scroll', onScroll);
+                        }
+                    };
+                    window.addEventListener('scroll', onScroll);
+                    onScroll(); // Check if the element is already in view
+                });
+            </script>
+            <h2 class="sm:text-[70px] text-[18px] font-light mt-4" style="color: #fcfad8;">
+                <span id="BNO" class="sm:text-9xl text-[18px]">0</span><br> BUILD UP AREA
+            </h2>
+            <script>
+                function animateNumber(element, start, end, duration) {
+                    let startTimestamp = null;
+                    const step = (timestamp) => {
+                        if (!startTimestamp) startTimestamp = timestamp;
+                        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                        const currentNumber = Math.floor(progress * (end - start) + start);
+                        element.textContent = currentNumber.toLocaleString();
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
+                        }
+                    };
+                    window.requestAnimationFrame(step);
+                }
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    const bnoElement = document.getElementById('BNO');
+                    const onScroll = () => {
+                        if (isElementInViewport(bnoElement)) {
+                            animateNumber(bnoElement, 0, 15890, 2000); // Animate from 0 to 15890 in 2 seconds
+                            window.removeEventListener('scroll', onScroll);
+                        }
+                    };
+                    window.addEventListener('scroll', onScroll);
+                    onScroll(); // Check if the element is already in view
+                });
+            </script>
+            <!-- <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg mt-[116px]">
+                Read More
+            </button> -->
+            </div>
+            <!-- <div class="flex-1 h-screen">
+                <img src="./images/WHATWE.png" alt="What We Do" class="w-[3500px] h-full object-cover">
+            </div> -->
+        </section>
+    </div>
+
+
+
+
+    
+   <!-- why us section -->
+    <div id="Partners" class="h-full">
+        <section class="flex flex-col-reverse sm:flex-row  sm:justify-center justify-start items-center sm:h-screen h-full">
+            <div class="flex flex-1 flex-col items-start p-8 sm:mt-[-250px] sm:ml-[100px]  ml-0 mt-0">
+                <h2 class="sm:text-[70px] text-[18px] font-light" style="color: #fcfbd9;">Why Us?</h2>
+                <p class="mt-4 sm:text-lg text-xs leading-8 " id="textForP">
+                    CertifiedExcellence: We are proudly certified by UAE government authorities,<br>
+                    including DEWA, Dubai Muncipality
+                    (DCM), and Civil Defence, ensuring our compliance with the
+                    highest industry standards.
+                </p>
+            </div>
+
+            <div class="sm:flex-1 mt-8">
+                <img class="hidden sm:block" src="./images/partnersforeground.png" alt="Partners" id="partnersImage">
+                <!-- <img class="block sm:hidden" src="./imagesformobile/whyusforeground.png" alt="Partners" id="partnersImage"> -->
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- gov section -->
+
+    <div id="gov">
+        <section class="flex sm:flex-row flex-col justify-center items-center sm:h-screen h-full w-full overflow-hidden">
+            <div class="flex flex-1 flex-col items-start justify-center p-8 sm:mt-[-100px] sm:ml-[100px] ml-0 my-4 sm:my-0">
+                <h2 class="sm:text-[70px] text-[18px] font-light" style="color: #fcfad8;">Approved By UAE Government</h2>
+                <p class="mt-4 sm:text-lg text-xs leading-8 text-justify sm:w-full w-[80vw] " id="textForP">
+                    From luxury residential spaces to high-end commercial projects,
+                    our expertise <br> lies in transforming visions into reality. Certified
+                    by UAE authorities, we uphold <br> the highest standards of craftsmanship,
+                    ensuring that every detail reflects excellence.
+                </p>
+                <div class="sm:mt-[150px] mt-8 relative sm:w-[600px] w-[350px] overflow-hidden">
+                    <div class="carousel-container flex transition-transform duration-500" id="carousel">
+                        <!-- Slide 1 -->
+                        <div class="min-w-full grid grid-cols-3 gap-8">
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-11aa.svg" alt="DCD" class="w-[50px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-31aa.svg" alt="DM" class="w-[500px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-41aa.svg" alt="DEWA" class="w-[50px] object-contain">
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-full grid grid-cols-3 gap-8">
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-91aa.svg" alt="SEWA" class="w-[50px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-71aa.svg" alt="TRAKHEES" class="w-[500px] mt-[50px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-61aa.svg" alt="FEWA" class="h-16 object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <button class="hidden sm:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 text-white" onclick="moveCarousel(-1)">❮</button>
+                    <button class="hidden sm:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 text-white" onclick="moveCarousel(1)">❯</button>
+                </div>
+
+                <script>
+                    let currentSlide = 0;
+                    const carousel = document.getElementById('carousel');
+
+                    function moveCarousel(direction) {
+                        const slides = document.querySelectorAll('.carousel-container > div');
+                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+
+                    // Auto-advance every 3 seconds
+                    setInterval(() => moveCarousel(1), 3000);
+                </script>
+            </div>
+            <div class="flex-1">
+                <img src="./images/Asset-801.png" alt="Partners" class="sm:w-[800px] w-[350px]">
+            </div>
+        </section>
+    </div>
+
+
+<!-- project section -->
+
+    <div id="Projects">
+        <section class="sm:flex justify-center items-center sm:h-screen h-full">
+            <div class="flex flex-1 flex-col items-start p-8 sm:mt-[50px] sm:ml-[100px] ml-0 ">
+                <h2 class="sm:text-6xl text-[18px]  font-light text-[#fcfad8] sm:mt-0 pt-20">
+                    Seamless and
+                    high-quality execution
+
+                </h2>
+                <p class="mt-4 sm:text-lg " id="textForP">
+                    At MSC, we take a approach to interior design, managing
+                    every project from concept to completion with precision
+                    and creativity. Our process begins with understanding
+                    your vision, requirements, and space dynamics.
+                </p>
+                <a href="./project.html">
+
+                    <button class="mt-12 sm:px-6 px-2 sm:py-3 py-2 sm:w-[230px] w-[130px] text-[12px]  sm:text-lg bg-white text-black font-medium uppercase tracking-widest shadow-lg sm:mt-[216px]   hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold sm:mb-0 mb-5">
+                        View Projects
+                    </button>
+                </a>
+                <!-- <div class="mt-[150px]">
+                    <div class="flex flex-row bg-black bg-opacity-60 p-4 space-x-4 w-[459px]">
+                        <div class="border-r border-white pr-4">
+                            <h6>DCD</h6>
+                        </div>
+                        <div class="border-r border-white pr-4">
+                            <h6>DM</h6>
+                        </div>
+                        <div class="border-r border-white pr-4">
+                            <h6>DEWA</h6>
+                        </div>
+                        <div class="border-r border-white pr-4">
+                            <h6>SEWA</h6>
+                        </div>
+                        <div class="border-r border-white pr-4">
+                            <h6>TRAKHEES</h6>
+                        </div>
+                        <div class="pr-4">
+                            <h6>FEWA</h6>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="flex-1 hidden sm:block">
+                <img src="./images/bed-room.png" alt="Partners" id="projectFg">
+            </div>
+        </section>
+    </div>
+
+    <!-- <div id="sub"> -->
+        <!-- Jack -->
+    <!-- </div> -->
+    <!-- <div id="Jack">
+        <section class="flex justify-center items-center h-screen">
+            <div class="flex flex-1 flex-col items-start p-8 mt-[-200px] ml-[100px]">
+                <h2 class="text-4xl font-light">Jack Advert</h2>
+                <p class="max-w-md mt-4 text-lg">is a subsidiary of Mars Space, showcasing expertise and synergy in design and creative solutions.</p>
+                <button class="mt-6 px-6 py-3 w-[250px] bg-white text-black font-medium uppercase tracking-widest rounded-lg shadow-lg">
+                    EXPLORE OUR WORK
+                </button>
+            </div>
+            <div class="flex-1">
+                <img src="./images/projectfg.png" alt="Partners" id="jackFg">
+            </div>
+        </section>
+
+    </div> -->
+
+    <footer class="flex justify-center items-center sm:h-screen bg-black text-white h-full">
+        <div class="grid sm:grid-cols-5 grid-cols-2 gap-4 p-8 text-center">
+            <div class="sm:mt-[100px] text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[40px] tracking-[4px] text-[#fcfad8]">PHONE</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class=" text-xs">+971589653760</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[85px] tracking-[4px] text-[#fcfad8]">E-MAIL</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class="text-xs">info@marsspace.ae</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">LOCATION</h3>
+                <ul>
+                    <li>
+                        <p class="sm:text-justify text-xs leading-8" id="textForP" >GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">SERVICES</h3>
+                <ul>
+                    <li><a href="#"><p class="text-left text-[10px] leading-8" id="textForP"  >FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify text-xs leading-8" id="textForP" >Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify text-xs leading-8" id="textForP" >Construction Contract</p></a></li>
+                </ul>
+                <!-- <div class="mt-[50px]">
+                    <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
+                    <ul>
+                        <li><a href="#"><p class="text-justify">Branding</p></a></li>
+                        <li><a href="#"><p class="text-justify">Packging Design</p></a></li>
+                        <li><a href="#"><p class="text-justify">3D Visualization</p></a></li>
+                        <li><a href="#"><p class="text-justify">Animation</p></a></li>
+                        <li><a href="#"><p class="text-justify">More</p></a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="sm:mt-[100px] mt-5 text-left">
+                <h3 class="sm:text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8] ">GET SOCIAL</h3>
+                <ul class="flex justify-start sm:justify-center space-x-4">
+                    <li><a href="https://www.instagram.com/marspaceinteriors/?hl=en" target="_blank"><img src="./images/instagram.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/whatsapp.png" alt="" class="sm:w-8 w-6"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function getRandomNumber() {
+        return ('0' + Math.floor(Math.random() * 99 + 1)).slice(-2);
+        }
+        function updateNumbers() {
+        const num1 = document.getElementById('num1');
+        const num2 = document.getElementById('num2');
+        const num3 = document.getElementById('num3');
+
+        num1.classList.add('transform', 'translate-y-[-100%]', 'opacity-0');
+        num2.classList.add('transform', 'translate-y-[-100%]', 'opacity-0');
+        num3.classList.add('transform', 'translate-y-[-100%]', 'opacity-0');
+
+        setTimeout(() => {
+            num1.textContent = `-${getRandomNumber()}`;
+            num2.textContent = `-${getRandomNumber()}`;
+            num3.textContent = `-${getRandomNumber()}`;
+
+            num1.classList.remove('translate-y-[-100%]', 'opacity-0');
+            num2.classList.remove('translate-y-[-100%]', 'opacity-0');
+            num3.classList.remove('translate-y-[-100%]', 'opacity-0');
+            num1.classList.add('translate-y-[0]', 'opacity-100');
+            num2.classList.add('translate-y-[0]', 'opacity-100');
+            num3.classList.add('translate-y-[0]', 'opacity-100');
+        }, 500);
+        }
+        setInterval(updateNumbers, 1000); // Update every 2 seconds
+        updateNumbers(); // Initial call to set numbers immediately
+
+        const menuBtn = document.getElementById("mobile-menu-btn");
+  const sidebar = document.getElementById("mobile-sidebar");
+  const overlay = document.getElementById("overlay");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = sidebar.classList.contains("translate-x-0");
+
+    // Toggle sidebar
+    sidebar.classList.toggle("translate-x-full");
+    sidebar.classList.toggle("translate-x-0");
+
+    // Toggle overlay
+    overlay.classList.toggle("hidden");
+
+    // Swap icons
+    hamburgerIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+
+  // Close when clicking overlay
+  overlay.addEventListener("click", () => {
+    sidebar.classList.add("translate-x-full");
+    sidebar.classList.remove("translate-x-0");
+    overlay.classList.add("hidden");
+
+    hamburgerIcon.classList.remove("hidden");
+    closeIcon.classList.add("hidden");
+  });
+
+
+    </script>
+</body>
+</html>

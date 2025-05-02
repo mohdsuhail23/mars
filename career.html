@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career | Mars Space Interiors</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'Deradioh';
+            src: url('./font/Deradioh.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'EurostileBQ';
+            src: url('./font/EurostileBQ-Extended.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'Futura';
+            src: url('./font/FuturaBkBTBook.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Deradioh' !important;
+            /* background-image: url('./images/PROJECT.jpg'); */
+            background-image: url('./images/carrer-new-bg.png');
+            background-size: cover;
+            /* background-attachment: fixed; */
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        p{
+            font-family: 'EurostileBQ' !important;
+        }
+        /* #main {
+            background-image: url('./images/servicesPageBG.png'); Replace with your actual image
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            margin-top: 0;
+        } */
+        #logo {
+            width: 80px !important;
+            margin-top: -25px !important;
+        }
+        #btn {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+         a>span{
+            font-size: 25px;
+        }
+        #textForD{
+            font-family: 'Deradioh' !important;
+            font-size: 26;
+            font-weight: 100;
+        }
+        /* #What {
+            background-image: url('./images/ServicesInteriorFitoutBG.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        /* #Partners {
+            background-image: url('./images/ServicespageFromscratchBG.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+        } */
+        /* #Projects {
+            background-image: url('./images/projectbg.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        #projectFg {
+            width: 900px;
+            height: 900px;
+            object-fit: cover;
+        }
+        footer {
+            background-image: url('./images/footer.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            /* height: 40vh; Reduced height */
+            background-size: 100% 100%; /* Reduced width */
+            height: 100vh;
+        }
+        .text {
+            /* transform: translateX(-50%); */
+            font-weight: bold;
+            /* color: #ffb400; */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .text:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .text:hover::before {
+            content: "[";
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+        .text:hover::after {
+            content: "]";
+            transition: all 0.3s ease-in-out;
+            margin-left: 10px;
+        }
+        #textForD{
+            font-family: 'Deradioh' !important;
+            font-size: 26;
+            font-weight: 100;
+        }
+        #textForE{
+            font-family: 'EurostileBQ' !important;
+            font-size: 110px;
+            font-weight: 100;
+            color: #fcfad8;
+        }
+        #textForP{
+            font-family: 'Futura' !important;
+            font-size: 25px;
+            font-weight: 100;
+            color: #fcfad8;
+        }
+        
+        .texts:hover{
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+
+        @media only screen and (max-width: 600px){
+
+            #textForP{
+            font-size: 15px;
+        }
+
+            footer {
+            background-image: url('./imagesformobile/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+         
+            
+        }
+
+        }
+
+    </style>
+</head>
+<body class="text-white font-sans">
+    <div id="main">
+        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full mt-8">
+            <nav>
+                <ul class="flex space-x-24">
+                    <li><a href="./">
+                        <span class="text" id="textForD">
+                            Home
+                        </span>
+                    </a></li>
+                    <li><a href="./services.html">
+                        <span class="text" id="textForD">
+                            Services
+                        </span>
+                    </a></li>
+                    <li><a href="./project.html">
+                        <span class="text" id="textForD">
+                            Projects
+                        </span>
+                    </a></li>
+                    <img id="logo" src="./images/logo.png" alt="">
+                    <li><a href="#gov">
+                        <span class="text" id="textForD">
+                            Authority Approval
+                        </span>
+                    </a></li>
+                    <li><a href="./career.html">
+                        <span class="text" id="textForD">
+                            Career
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- Mobile Header -->
+<div class="md:hidden mt-4  fixed w-full top-0 left-0 z-50 flex items-center justify-between px-4 py-4 bg-transparent backdrop-blur-sm">
+    <!-- Logo -->
+    <img src="./images/logo.png" alt="Logo" class="h-10">
+  
+    <!-- Menu Toggle Button -->
+    <button id="mobile-menu-btn">
+      <!-- Hamburger Icon -->
+      <svg id="hamburger-icon" class="w-9 h-9 text-[#fcfad8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Close Icon (hidden by default) -->
+      <svg id="close-icon" class="w-9 h-9 text-[#fcfad8] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Sidebar (from right) -->
+  <div id="mobile-sidebar" class="fixed top-0 right-0 w-64 h-full bg-transparent backdrop-blur-lg transform translate-x-full transition-transform duration-300 z-40 p-6 space-y-6">
+    <a href="./" class="block  mt-16 texts   text-lg">Home</a>
+    <a href="./services.html" class="block texts text-lg">Services</a>
+    <a href="./project.html" class="block texts text-lg">Projects</a>
+    <a href="#gov" class="block texts  text-lg">Authority Approval</a>
+    <a href="./career.html" class="block texts  text-lg">Career</a>
+  </div>
+  <!-- Overlay (optional, transparent effect) -->
+  <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden z-30"></div>
+    </div>
+    <div>
+        <section class="flex flex-col justify-center items-center sm:h-screen h-full">
+            <div class="text-center px-4 sm:mt-[-10px] mt-[10rem] sm:mt-0">
+                <h1 class="sm:text-6xl font-light mb-8 text-[25px]">
+                <span class="block">BE PART OF ICONIC TEAM</span>
+                <!-- <span class="block">BUILD BEYOND</span> -->
+                </h1>
+                <p class="sm:text-xl text-center text-[18px]">
+                    At Mars Space Interior, we believe in creating extraordinary spaces—and that starts with an extraordinary team. <br>
+                    If you are passionate about interior design, architecture, project management, or fit-out <br>
+                    solutions, we invite you to be part of our journey.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="flex justify-center items-center sm:h-[1300px] sm:mt-[-300px] mb-[5rem] sm:mb-0">
+        <div class="container mx-auto px-4">
+            <h2 class="sm:text-5xl mb-[50px] text-center text-[25px] mt-[4rem] sm:mt-0">CURRENT OPENINGS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center sm:place-items-start ">
+                <div class="sm:w-[600px] w-[330px] sm:ml-[60px] bg-orange-600/50 p-6  rounded-lg transition-all duration-300 hover:bg-black/70 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105">
+                    <h3 class="sm:text-2xl mb-4 text-[20px]">INTERIOR DESIGNER</h3>
+                    <p class="mb-4 sm:text-base text-[14px]">At Mars Space Interior, we are looking for visionary Interior Designers who can transform ideas into exceptional
+                        spaces. If you have a passion for creativity, innovation, and precision, we invite you to join our team</p>
+                    <button class="bg-white text-black sm:px-6 sm:py-2 py-1 px-3 transition-all duration-300 hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_15px_rgba(255,180,0,0.5)]">Apply Now</button>
+                </div>
+                <div class="sm:w-[600px] w-[330px] sm:ml-[20px] bg-orange-600/50 p-6 rounded-lg transition-all duration-300 hover:bg-black/70 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105">
+                    <h3 class="sm:text-2xl mb-4 text-[20px]">ARCHITECT DESIGNER</h3>
+                    <p class="mb-4 sm:text-base text-[14px]">At Mars Space Interior, we are looking for visionary Interior Designers who can transform ideas into exceptional
+                        spaces. If you have a passion for creativity, innovation, and precision, we invite you to join our team
+                        </p>
+                    <button class="bg-white text-black sm:px-6 sm:py-2 py-1 px-3 transition-all duration-300 hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_15px_rgba(255,180,0,0.5)]">Apply Now</button>
+                </div>
+                <div class="sm:w-[600px] w-[330px] sm:ml-[60px] bg-orange-600/50 p-6 rounded-lg transition-all duration-300 hover:bg-black/70 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105">
+                    <h3 class="sm:text-2xl mb-4 text-[20px]">PROJECT MANAGER</h3>
+                    <p class="mb-4 sm:text-base text-[14px]">At Mars Space Interior, we are looking for visionary Interior Designers who can transform ideas into exceptional
+                        spaces. If you have a passion for creativity, innovation, and precision, we invite you to join our team</p>
+                    <button class="bg-white text-black sm:px-6 sm:py-2 py-1 px-3 transition-all duration-300 hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_15px_rgba(255,180,0,0.5)]">Apply Now</button>
+                </div>
+                <div class="sm:w-[600px] w-[330px] sm:ml-[20px] bg-orange-600/50 p-6 rounded-lg transition-all duration-300 hover:bg-black/70 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105">
+                    <h3 class="sm:text-2xl text-[20px] mb-4">3D VISUALIZER</h3>
+                    <p class="mb-4 sm:text-base text-[14px]">At Mars Space Interior, we are looking for visionary Interior Designers who can transform ideas into exceptional
+                        spaces. If you have a passion for creativity, innovation, and precision, we invite you to join our team</p>
+                    <button class="bg-white text-black sm:px-6 sm:py-2 py-1 px-3 transition-all duration-300 hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_15px_rgba(255,180,0,0.5)]">Apply Now</button>
+                </div>
+                <div class="sm:w-[600px] w-[330px] sm:ml-[60px] bg-orange-600/50 p-6 rounded-lg transition-all duration-300 hover:bg-black/70 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105">
+                    <h3 class="sm:text-2xl mb-4 text-[20px]">SITE ENGINEER</h3>
+                    <p class="mb-4 sm:text-base text-[14px]">At Mars Space Interior, we are looking for visionary Interior Designers who can transform ideas into exceptional
+                        spaces. If you have a passion for creativity, innovation, and precision, we invite you to join our team</p>
+                        <a href="mailto:info@marsspace.ae?subject=Job Application for Site Engineer Position">
+                            <button class="bg-white text-black sm:px-6 sm:py-2 py-1 px-3 transition-all duration-300 hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_15px_rgba(255,180,0,0.5)]">Apply Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="flex justify-center items-center sm:h-screen bg-black text-white h-full">
+        <div class="grid sm:grid-cols-5 grid-cols-2 gap-4 p-8 text-center">
+            <div class="sm:mt-[100px] text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[40px] tracking-[4px] text-[#fcfad8]">PHONE</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class=" text-xs">+971589653760</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[85px] tracking-[4px] text-[#fcfad8]">E-MAIL</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class="text-xs">info@marsspace.ae</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">LOCATION</h3>
+                <ul>
+                    <li>
+                        <p class="sm:text-justify text-xs leading-8" id="textForP" >GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">SERVICES</h3>
+                <ul>
+                    <li><a href="#"><p class="text-left text-[10px] leading-8" id="textForP"  >FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify text-xs leading-8" id="textForP" >Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify text-xs leading-8" id="textForP" >Construction Contract</p></a></li>
+                </ul>
+                <!-- <div class="mt-[50px]">
+                    <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
+                    <ul>
+                        <li><a href="#"><p class="text-justify">Branding</p></a></li>
+                        <li><a href="#"><p class="text-justify">Packging Design</p></a></li>
+                        <li><a href="#"><p class="text-justify">3D Visualization</p></a></li>
+                        <li><a href="#"><p class="text-justify">Animation</p></a></li>
+                        <li><a href="#"><p class="text-justify">More</p></a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="sm:mt-[100px] mt-5 text-left">
+                <h3 class="sm:text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8] ">GET SOCIAL</h3>
+                <ul class="flex justify-start sm:justify-center space-x-4">
+                    <li><a href="https://www.instagram.com/marspaceinteriors/?hl=en" target="_blank"><img src="./images/instagram.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/whatsapp.png" alt="" class="sm:w-8 w-6"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("mobile-menu-btn");
+  const sidebar = document.getElementById("mobile-sidebar");
+  const overlay = document.getElementById("overlay");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = sidebar.classList.contains("translate-x-0");
+
+    // Toggle sidebar
+    sidebar.classList.toggle("translate-x-full");
+    sidebar.classList.toggle("translate-x-0");
+
+    // Toggle overlay
+    overlay.classList.toggle("hidden");
+
+    // Swap icons
+    hamburgerIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+
+  // Close when clicking overlay
+  overlay.addEventListener("click", () => {
+    sidebar.classList.add("translate-x-full");
+    sidebar.classList.remove("translate-x-0");
+    overlay.classList.add("hidden");
+
+    hamburgerIcon.classList.remove("hidden");
+    closeIcon.classList.add("hidden");
+  });
+    </script>
+</body>
+</html>

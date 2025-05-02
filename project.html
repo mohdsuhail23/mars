@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Mars Space Interiors</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'Deradioh';
+            src: url('./font/Deradioh.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'EurostileBQ';
+            src: url('./font/EurostileBQ-Extended.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'FuturaBK';
+            src: url('./font/FuturaBkBTBook.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Deradioh' !important;
+            /* background-image: url('./images/PROJECT.jpg'); */
+            background-image: url('./images/project-bg-main.jpg');
+            background-size: cover;
+            /* background-attachment: fixed; */
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        p{
+            font-family: 'EurostileBQ' !important;
+        }
+        /* #main {
+            background-image: url('./images/servicesPageBG.png'); Replace with your actual image
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            margin-top: 0;
+        } */
+        #logo {
+            width: 80px !important;
+            margin-top: -25px !important;
+        }
+        #btn {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+         a>span{
+            font-size: 25px;
+        }
+        #textForD{
+            font-family: 'Deradioh' !important;
+            font-size: 26;
+            font-weight: 100;
+        }
+        /* #What {
+            background-image: url('./images/ServicesInteriorFitoutBG.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        /* #Partners {
+            background-image: url('./images/ServicespageFromscratchBG.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+        } */
+        /* #Projects {
+            background-image: url('./images/projectbg.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        #projectFg {
+            width: 900px;
+            height: 900px;
+            object-fit: cover;
+        }
+        footer {
+            background-image: url('./images/footer.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            /* height: 40vh; Reduced height */
+            background-size: 100% 100%; /* Reduced width */
+            height: 100vh;
+        }
+        .text {
+            /* transform: translateX(-50%); */
+            font-weight: bold;
+            /* color: #ffb400; */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .text:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .text:hover::before {
+            content: "[";
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+        .text:hover::after {
+            content: "]";
+            transition: all 0.3s ease-in-out;
+            margin-left: 10px;
+        }
+        #textForP{
+            font-family: 'FuturaBK' !important;
+            font-size: 25px;
+            font-weight: 100;
+            color: #fcfad8;
+        }
+        .texts:hover{
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+
+    /* css for  mobile */
+
+    @media only screen and (max-width: 600px){
+
+        footer {
+            background-image: url('./imagesformobile/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+         
+            
+        }
+        #textForP{
+            font-size: 15px;
+        }
+
+    }
+
+
+        
+
+
+
+
+    </style>
+</head>
+<body class="text-white font-sans">
+    <div id="main">
+        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full mt-8">
+            <nav>
+                <ul class="flex space-x-24">
+                    <li><a href="./">
+                        <span class="text" id="textForD">
+                            Home
+                        </span>
+                    </a></li>
+                    <li><a href="./services.html">
+                        <span class="text" id="textForD">
+                            Services
+                        </span>
+                    </a></li>
+                    <li><a href="./project.html">
+                        <span class="text" id="textForD">
+                            Projects
+                        </span>
+                    </a></li>
+                    <img id="logo" src="./images/logo.png" alt="">
+                    <li><a href="#gov">
+                        <span class="text" id="textForD">
+                            Authority Approval
+                        </span>
+                    </a></li>
+                    <li><a href="./career.html">
+                        <span class="text" id="textForD">
+                            Career
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- Mobile Header -->
+<div class="sm:hidden mt-4  fixed w-full top-0 left-0 z-50 flex items-center justify-between px-4 py-4 bg-transparent backdrop-blur-sm">
+    <!-- Logo -->
+    <img src="./images/logo.png" alt="Logo" class="h-10">
+  
+    <!-- Menu Toggle Button -->
+    <button id="mobile-menu-btn">
+      <!-- Hamburger Icon -->
+      <svg id="hamburger-icon" class="w-9 h-9 text-[#fcfad8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Close Icon (hidden by default) -->
+      <svg id="close-icon" class="w-9 h-9 text-[#fcfad8] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Sidebar (from right) -->
+  <div id="mobile-sidebar" class="fixed top-0 right-0 w-64 h-full bg-transparent backdrop-blur-lg transform translate-x-full transition-transform duration-300 z-40 p-6 space-y-6">
+    <a href="./" class="block  mt-16 texts   text-lg">Home</a>
+    <a href="./services.html" class="block texts text-lg">Services</a>
+    <a href="./project.html" class="block texts text-lg">Projects</a>
+    <a href="#gov" class="block texts  text-lg">Authority Approval</a>
+    <a href="./career.html" class="block texts  text-lg">Career</a>
+  </div>
+  <!-- Overlay (optional, transparent effect) -->
+  <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden z-30"></div>
+        <div class="h-full">
+            <section class="flex sm:flex-row flex-col justify-center items-start sm:items-center sm:h-screen h-full">
+                <div class="flex flex-1 flex-col items-start justify-center p-8 sm:mt-[150px] mt-[12rem] sm:ml-[100px]  h-full">
+                    <h2 class="sm:text-7xl font-light mt-[-70px] text-[30px]">SOME WHO BUILD</h2>
+                    <h2 class="sm:text-7xl font-light text-[30px]">BEYOND</h2>
+                    <p class="mt-4 sm:text-2xl text-[18px]" style="font-family: FuturaBK !important;">At Mars Space Interior, we don't just design spaces we craft experiences <br>
+                         that go beyond expectations. With innovation, precision, and a deep understanding of aesthetics.</p>  
+                         <!-- and functionlity, we create <br> interiors that inspire. -->
+                    <button class="sm:text-[15px] px-1 py-1 sm:px-6 sm:py-3 sm:w-[230px] w-[120px] text-[10px] bg-white text-black font-medium uppercase tracking-widest mt-6 sm:mt-[100px] shadow-lg hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                        SCHEDULE A CALL
+                    </button>
+                </div>
+                <div class="flex-1 sm:h-screen sm:mt-[250px] overflow-hidden h-full p-8 sm:p-0 ">
+                    <img src="./images/01ForegroundImage.png" alt="What We Do" 
+                        class="sm:w-[600px] w-[400px] h-[250px] sm:h-[500px] object-cover  sm:mr-[500px] sm:mt-[100px]  transition-transform duration-300 hover:scale-110">
+                </div>
+            </section>
+        </div>
+    </div>
+    <h2 class="sm:text-8xl text-center sm:mb-[-60px] text-[35px] mt-10 sm:mt-0">GCC Exchange</h2>
+    <div class="grid sm:grid-cols-3 grid-cols-1 sm:gap-3 gap-8 p-8 sm:ml-[50px] sm:mt-[100px] mt-10 sm:mr-[50px]">
+        <div class="col-span-1">
+            <img src="./images/gcc-image-1.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">RESIDENTIAL</p> -->
+        </div>
+        <div class="col-span-1">
+            <img src="./images/gcc-image-2.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">CORPORATE</p> -->
+        </div>
+        <div class="col-span-1">
+            <img src="./images/gcc-image3.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">HOSPITALITY</p> -->
+        </div>
+        <!-- <div class="col-span-1">
+            <img src="./images/Reatail.png" alt="">
+            <p class="mt-[40px] text-center text">RETAIL</p>
+        </div> -->
+    </div>
+    <div class="grid grid-cols-1 gap-8 p-8 sm:ml-[50px] mt-[50px] sm:mr-[50px]">
+        <div class="col-span-1">
+            <p class="sm:text-3xl sm:text-center text-center text-[18px] mt-[-10px]" style="font-family: FuturaBK !important;">
+                GCC Exchange is a fast-growing Money Transfer and Foreign Exchange brand for individuals and businesses<br>
+                We have grown from our first branch in Dubai - U.A.E. to a total of twenty four branches in the U.A.E.
+            </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 p-8 sm:ml-[50px] sm:mt-[80px] sm:mr-[50px]">
+        <div class="col-span-1">
+            <h3 class="sm:text-7xl text-center text-[25px]">
+                ONARA REALESTATE
+            </h3>
+        </div>
+    </div>
+    <div class="grid sm:grid-cols-3 grid-cols-1 sm:gap-4 gap-8 p-8 sm:ml-[50px] mt-[20px] sm:mr-[50px]">
+        <div class="col-span1">
+            <img src="./images/Curves-13-2.png" alt="">
+        </div>
+        <div class="col-span1">
+            <img src="./images/Curves-13-1.png" alt="">
+        </div>
+        <div class="col-span1">
+            <img src="./images/Curves-13.png" alt="">
+        </div>
+    </div>
+    <div class="grid grid-cols-1 gap-8 p-8 sm:ml-[50px] sm:mt-[30px] sm:mr-[50px] sm:mb-[20px]">
+        <div class="col-span-1">
+            <p class="sm:text-3xl text-[18px] text-center sm:mt-[-10px] sm:mb-[100px] mb-4" style="font-family: FuturaBK !important;">
+                ONÓRA Real Estate is a Dubai-based real estate agency focused on assisting clients in exploring <br>
+                Dubai's off-plan property market and providing a comprehensive real estate experience.
+            </p>
+        </div>
+    </div>
+    <!-- <div id="What">
+        <section class="flex justify-center items-center h-screen mt-[100px]">
+            <img src="./images/EidtedVideo.png" alt="What We Do" class="w-[90vw] h-[100vh] object-cover">
+        </section>
+    </div> -->
+    <!-- <div class="grid grid-cols-2 gap-24 p-8 ml-[50px] mt-[100px] mr-[50px] mb-[200px]">
+        <div class="col-span-1">
+            <img src="./images/Curves12.png" alt=""> -->
+            <!-- <p class="mt-[40px] text-center text">RESIDENTIAL</p> -->
+        <!-- </div>
+        <div class="col-span-1">
+            <img src="./images/Hue_Saturation25.png" alt=""> -->
+            <!-- <p class="mt-[40px] text-center text">CORPORATE</p> -->
+        <!-- </div>
+        <div class="col-span-1">
+            <img src="./images/art-gallery-with-paintings-wooden-benches.png" alt=""> -->
+            <!-- <p class="mt-[40px] text-center text">HOSPITALITY</p> -->
+        <!-- </div>
+        <div class="col-span-1">
+            <img src="./images/luxurious-bathroom-with-gold-embellishments.png" alt=""> -->
+            <!-- <p class="mt-[40px] text-center text">RETAIL</p> -->
+        <!-- </div>
+    </div> -->
+
+    <footer class="flex justify-center items-center sm:h-screen bg-black text-white h-full ">
+        <div class="grid sm:grid-cols-5 grid-cols-2 gap-4 p-8 p-3">
+            <div class="sm:mt-[100px] text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[40px] tracking-[4px] text-[#fcfad8]">PHONE</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class=" text-xs">+971589653760</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[85px] tracking-[4px] text-[#fcfad8]">E-MAIL</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class="text-xs">info@marsspace.ae</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">LOCATION</h3>
+                <ul>
+                    <li>
+                        <p class="sm:text-justify text-xs leading-8" id="textForP" >GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">SERVICES</h3>
+                <ul>
+                    <li><a href="#"><p class="text-left text-[10px] leading-8" id="textForP"  >FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify text-xs leading-8" id="textForP" >Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify text-xs leading-8" id="textForP" >Construction Contract</p></a></li>
+                </ul>
+                <!-- <div class="mt-[50px]">
+                    <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
+                    <ul>
+                        <li><a href="#"><p class="text-justify">Branding</p></a></li>
+                        <li><a href="#"><p class="text-justify">Packging Design</p></a></li>
+                        <li><a href="#"><p class="text-justify">3D Visualization</p></a></li>
+                        <li><a href="#"><p class="text-justify">Animation</p></a></li>
+                        <li><a href="#"><p class="text-justify">More</p></a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="sm:mt-[100px] mt-5 text-left">
+                <h3 class="sm:text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8] ">GET SOCIAL</h3>
+                <ul class="flex justify-start sm:justify-center space-x-4">
+                    <li><a href="https://www.instagram.com/marspaceinteriors/?hl=en" target="_blank"><img src="./images/instagram.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/whatsapp.png" alt="" class="sm:w-8 w-6"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const menuBtn = document.getElementById("mobile-menu-btn");
+const sidebar = document.getElementById("mobile-sidebar");
+const overlay = document.getElementById("overlay");
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const closeIcon = document.getElementById("close-icon");
+
+menuBtn.addEventListener("click", () => {
+  const isOpen = sidebar.classList.contains("translate-x-0");
+
+  // Toggle sidebar
+  sidebar.classList.toggle("translate-x-full");
+  sidebar.classList.toggle("translate-x-0");
+
+  // Toggle overlay
+  overlay.classList.toggle("hidden");
+
+  // Swap icons
+  hamburgerIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
+});
+
+// Close when clicking overlay
+overlay.addEventListener("click", () => {
+  sidebar.classList.add("translate-x-full");
+  sidebar.classList.remove("translate-x-0");
+  overlay.classList.add("hidden");
+
+  hamburgerIcon.classList.remove("hidden");
+  closeIcon.classList.add("hidden");
+});
+  </script>
+</body>
+</html>
