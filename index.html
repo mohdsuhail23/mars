@@ -34,24 +34,22 @@
             font-family: 'EurostileBQ' !important;
         }
         #main {
-            background-image: url('./images/Homepage.png'); /* Replace with your actual image */
+            background-image: url('./images/Homepage.jpg'); /* Replace with your actual image */
             background-size: cover;
             background-attachment: fixed;
             background-position: top;
             background-repeat: no-repeat;
             margin-top: 0;
         }
-        #logo {
+        /* #logo {
             width: 80px !important;
             margin-top: -25px !important;
-        }
+        } */
         #btn {
             border-top-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-         a>span{
-            font-size: 25px;
-        }
+       
         #What {
             background-image: url('./images/construtin.jpg'); /* Replace with your actual image */
             background-size: cover;
@@ -156,7 +154,7 @@
         }
         #textForD{
             font-family: 'Deradioh' !important;
-            font-size: 26;
+            font-size: 20;
             font-weight: 100;
         }
         #textForE{
@@ -181,6 +179,44 @@
             50% { transform: translateY(10px); opacity: 0.4; }
             100% { transform: translateY(0); opacity: 0.8; }
         }
+
+
+
+        /* for laptop */
+        @media (min-width: 1024px) and (max-width: 1440px) {
+
+ #textForE{
+            
+            font-size: 75px;
+            
+        }
+        #What {
+             /* Replace with your actual image */
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+
+            
+        }
+         #textForP{
+            font-size: 20px;
+        }
+
+
+         #partnersImage {
+            width: 800px;
+            height: 900px;
+            object-fit: cover;
+        }
+
+        #projectFg {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+}
+
   
         /* for mobile */
 
@@ -266,9 +302,9 @@
 </head>
 <body class="text-white font-sans">
     <div id="main">
-        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full mt-8">
+        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full 2xl:mt-8 mt-5">
             <nav>
-                <ul class="flex space-x-24">
+                <ul class="flex space-x-24  text-[18px] 2xl:text-[25px]">
                     <li><a href="./">
                         <span class="text" id="textForD">
                             Home
@@ -284,8 +320,8 @@
                             Projects
                         </span>
                     </a></li>
-                    <img id="logo" src="./images/logo.png" alt="">
-                    <li><a href="#gov">
+                    <img id="logo" class="2xl:w-[80px] 2xl:mt-[-25px] w-[50px] mt-[-14px]"  src="./images/logo.png" alt="">
+                    <li><a href="./authority.html">
                         <span class="text" id="textForD">
                             Authority Approval
                         </span>
@@ -321,7 +357,7 @@
     <a href="./" class="block  mt-16 texts   text-lg">Home</a>
     <a href="./services.html" class="block texts text-lg">Services</a>
     <a href="./project.html" class="block texts text-lg">Projects</a>
-    <a href="#gov" class="block texts  text-lg">Authority Approval</a>
+    <a href="./authority.html" class="block texts  text-lg">Authority Approval</a>
     <a href="./career.html" class="block texts  text-lg">Career</a>
   </div>
   <!-- Overlay (optional, transparent effect) -->
@@ -331,22 +367,22 @@
   <!--  hero section-->
 
         
-        <main class="flex flex-col md:justify-center  h-screen md:px-16 px-3 md:ml-[250px] ml-5">
-            <h1 class="sm:text-9xl mt-[12rem]  font-light sm:mt-[3.5rem]" id="textForE">MARS</h1>
+        <main class="flex flex-col md:justify-center  h-screen md:px-16 px-3 2xl:ml-[250px] ml-5 sm:ml-20">
+            <h1 class=" mt-[12rem]  font-light sm:mt-[3.5rem] " id="textForE">MARS</h1>
             <p class="mt-4 sm:text-[25px] text-[18px] sm:w-full w-[200px] text-left sm:text-justify leading-[1.3rem] sm:leading-8" style="font-family:'Futura' !important; font-weight: 100; color: #fcfbd9;"  >At Mars Space Interiors, we design visionary, <br class="hidden sm:block"> sustainable spaces that redefine living.</p>
       
             <a href="tel:+971589653760">
-                <button class=" sm:text-[15px] px-1 py-1 sm:px-6 sm:py-3 sm:w-[230px] w-[120px] text-[10px] bg-white text-black  uppercase tracking-widest shadow-lg  mt-10 sm:mt-[216px]   hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                <button class=" 2xl:text-[15px] sm:text-[12px] px-1 py-1 2xl:px-6 sm:px-3 sm:py-3 2xl:w-[230px] w-[120px] sm:w-[180px] text-[10px] bg-white text-black  uppercase tracking-widest shadow-lg  mt-10 sm:mt-[216px]   hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
                     Schedule A Call
                 </button>
             </a>
-            <div class="absolute   bottom-6 right-[50%] ">
+            <div class="absolute   bottom-6 2xl:right-[50%] right-[46%]">
                 <img src="./svg/Asset-101.svg" alt="" width="30px" class=" mouse-icon">
             </div>
     
         </main>
 
-        <aside class="absolute space-y-20 sm:top-[35%]  sm:right-8 right-[25%] sm:bottom-[23rem] bottom-[10rem] mt-15 sm:mt-0 text-lg sm:mr-[150px] mr-3 text-[#fcfad8]">
+        <aside class="absolute space-y-20 2xl:top-[35%] sm:top-[30%] sm:right-8 right-[25%] sm:bottom-[23rem] bottom-[10rem] mt-15 sm:mt-0 text-lg sm:mr-[150px] mr-3 text-[#fcfad8]">
             
             <div class="mb-2 mr-8 sm:mr-0 inline-block sm:block text-2xl transition-transform duration-500" id="num1">00</div>
             <div class="mb-2 mr-8 sm:mr-0 inline-block sm:block text-2xl transition-transform duration-500" id="num2">00</div>
@@ -363,11 +399,11 @@
     <div id="What" class="">
         <section class="flex justify-center items-center sm:h-screen h-full">
             <div class="flex flex-1 flex-col items-start p-8 sm:mt-[-150px] mt-0 sm:ml-[100px]">
-            <h2 class="sm:text-[70px] text-[27px] sm:font-light font-bold sm:mt-0 mt-3" style="color: #fcfad8;">What We Offer</h2>
+            <h2 class="2xl:text-[70px] sm:text-[50px] text-[27px] sm:font-light font-bold sm:mt-0 mt-3" style="color: #fcfad8;">What We Offer</h2>
             <p class="mt-4 sm:text-lg leading-[1.3rem] " id="textForP">Crafting innovative and <br class="sm:hidden">personalized interiors that <br> inspire and elevate <br class="sm:hidden">everyday living.</p>
             <a href="./services.html">
 
-                <button class="sm:mt-6 sm:px-6  px-1 py-1 sm:py-3 sm:w-[230px] w-[100px] text-[12px] sm:text-lg bg-white text-black font-medium uppercase tracking-widest shadow-lg sm:mt-[216px] mt-[5rem] hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                <button class="sm:mt-6 2xl:px-6 sm:px-3 px-1 py-1 sm:py-3 sm:w-[180px] 2xl:w-[230px] text-[12px] sm:text-[15px]  bg-white text-black font-medium uppercase tracking-widest shadow-lg sm:mt-[216px] mt-[5rem] hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
                     Read More
                 </button>
             </a>
@@ -384,11 +420,11 @@
 
     <div id="Project">
         <section class="flex justify-center items-center sm:h-screen h-full">
-            <div class="flex flex-1 flex-col items-start p-8 sm:mt-[50px] sm:ml-[100px] my-10 sm:my-0 ">
-            <h2 class="sm:text-[70px] text-[18px] font-light" style="color: #fcfad8;">
-                <span id="PNO" class="sm:text-9xl text-[18px]">0</span>
+            <div class="flex flex-1 flex-col items-start p-8 2xl:mt-[50px] sm:mt-[35px] sm:ml-[100px] my-10 sm:my-0 ">
+            <h2 class="2xl:text-[70px] sm:text-[55px] text-[18px] font-light" style="color: #fcfad8;">
+                <span id="PNO" class="2xl:text-9xl sm:text-7xl text-[18px]">0</span>
                 
-                <span class="sm:text-9xl text-[18px]">+</span><br> Projects
+                <span class="2xl:text-9xl sm:text-7xl text-[18px]">+</span><br> Projects
             </h2>
             <script>
                 function animateNumber(element, start, end, duration) {
@@ -426,8 +462,8 @@
                     onScroll(); // Check if the element is already in view
                 });
             </script>
-            <h2 class="sm:text-[70px] text-[18px] font-light mt-4" style="color: #fcfad8;">
-                <span id="BNO" class="sm:text-9xl text-[18px]">0</span><br> BUILD UP AREA
+            <h2 class="2xl:text-[70px] sm:text-7xl text-[18px] font-light mt-4" style="color: #fcfad8;">
+                <span id="BNO" class="2xl:text-9xl sm:text-7xl text-[18px]">0</span><br> BUILD UP AREA
             </h2>
             <script>
                 function animateNumber(element, start, end, duration) {
@@ -456,13 +492,6 @@
                     onScroll(); // Check if the element is already in view
                 });
             </script>
-            <!-- <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg mt-[116px]">
-                Read More
-            </button> -->
-            </div>
-            <!-- <div class="flex-1 h-screen">
-                <img src="./images/WHATWE.png" alt="What We Do" class="w-[3500px] h-full object-cover">
-            </div> -->
         </section>
     </div>
 
@@ -473,12 +502,12 @@
    <!-- why us section -->
     <div id="Partners" class="h-full">
         <section class="flex flex-col-reverse sm:flex-row  sm:justify-center justify-start items-center sm:h-screen h-full">
-            <div class="flex flex-1 flex-col items-start p-8 sm:mt-[-250px] sm:ml-[100px]  ml-0 mt-0 pt-4 sm:pt-8">
-                <h2 class="sm:text-[70px] text-[27px] sm:font-light font-bold " style="color: #fcfbd9;">Why Us?</h2>
+            <div class="flex flex-1 flex-col items-start p-8 2xl:mt-[-250px] sm:ml-[100px] sm:mt-[-4rem] ml-0 mt-0 pt-4 sm:pt-8">
+                <h2 class="2xl:text-[70px] sm:text-7xl text-[27px] sm:font-light font-bold " style="color: #fcfbd9;">Why Us?</h2>
                 <p class="sm:mt-4 mt-2 sm:text-lg text-xs sm:leading-8 leading-[1.3rem] " id="textForP">
-                    Certified Excellence: We are proudly<br class="sm:hidden"> certified by UAE government authorities,<br>
-                    including DEWA, Dubai Muncipality
-                    (DCM), and Civil Defence, ensuring our compliance with the
+                    Certified Excellence: We are proudly<br class="sm:hidden"> certified by UAE <br class="hidden sm:block 2xl-hidden"> government authorities,<br class="sm:hidden 2xl:block">
+                    including  DEWA, Dubai <br class="hidden sm:block 2xl-hidden">  Muncipality
+                    (DCM),  and Civil Defence, ensuring our compliance with the
                     highest industry standards.
                 </p>
             </div>
@@ -497,7 +526,7 @@
     <div id="gov">
         <section class="flex sm:flex-row flex-col justify-center items-center sm:h-screen h-full w-full overflow-hidden">
             <div class="flex flex-1 flex-col items-start justify-center p-8  sm:ml-[100px] mt-0 sm:mt-5 my-4 sm:my-0 w-full">
-                <h2 class="sm:text-[70px] text-[25px] sm:font-light font-bold" style="color: #fcfad8;">Approved By UAE Government</h2>
+                <h2 class="2xl:text-[70px] sm:text-4xl text-[25px] sm:font-light font-bold" style="color: #fcfad8;">Approved By UAE Government</h2>
                 <p class="mt-4 sm:text-lg text-xs sm:leading-8 leading-[1.3rem] sm:text-justify text-left sm:w-full w-[80vw] " id="textForP">
                     From luxury residential spaces to high-end commercial projects, our expertise lies in transforming visions into reality. Certified
                     by UAE authorities, we uphold  the highest standards of craftsmanship,
@@ -561,7 +590,7 @@
     <div id="Projects">
         <section class="sm:flex justify-center items-center sm:h-screen h-full">
             <div class="flex flex-1 flex-col items-start p-8 sm:mt-[50px] sm:ml-[100px] ml-0 ">
-                <h2 class="sm:text-6xl text-[18px] font-bold sm:font-light text-[#fcfad8] sm:mt-0  pt-10 ">
+                <h2 class="2xl:text-6xl sm:text-4xl text-[18px] font-bold sm:font-light text-[#fcfad8] sm:mt-0  pt-10 ">
                     Seamless and
                     high-quality execution
 
@@ -626,12 +655,12 @@
 
     </div> -->
 
-    <footer class="flex justify-center items-center sm:items-start sm:h-screen bg-black text-white h-full">
+    <footer class="flex justify-center items-center sm:items-end am:pb-7 pb-0 sm:h-screen bg-black text-white h-full">
         <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 p-8 text-center">
             <div class="sm:mt-[100px] text-left ">
                 <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[40px] tracking-[4px] text-[#fcfad8]">PHONE</h3>
                 <ul>
-                    <li><a href="#" id="textForP"  class=" text-xs">+971589653760</a></li>
+                    <li><a href="#" id="textForP"  class=" text-xs">+9123457869</a></li>
                 </ul>
             </div>
             <div class="sm:mt-[100px]  text-left ">

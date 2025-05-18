@@ -44,17 +44,17 @@
             background-repeat: no-repeat;
             margin-top: 0;
         }
-        #logo {
+        /* #logo {
             width: 80px !important;
             margin-top: -25px !important;
-        }
+        } */
         #btn {
             border-top-left-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-         a>span{
+         /* a>span{
             font-size: 25px;
-        }
+        } */
         #textForD{
             font-family: 'Deradioh' !important;
             font-size: 26;
@@ -112,7 +112,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-color: #000000;
-            height: 4200px;
+            height: 5000px;
         }
         #jackFg {
             width: 800px;
@@ -206,9 +206,9 @@
 </head>
 <body class="text-white font-sans bg-black">
     <div id="main">
-        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full mt-8">
+        <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full 2xl:mt-8 mt-5">
             <nav>
-                <ul class="flex space-x-24">
+                <ul class="flex space-x-24  text-[18px] 2xl:text-[25px]">
                     <li><a href="./">
                         <span class="text" id="textForD">
                             Home
@@ -224,8 +224,8 @@
                             Projects
                         </span>
                     </a></li>
-                    <img id="logo" src="./images/logo.png" alt="">
-                    <li><a href="#gov">
+                    <img id="logo" class="2xl:w-[80px] 2xl:mt-[-25px] w-[50px] mt-[-14px]"  src="./images/logo.png" alt="">
+                    <li><a href="./authority.html">
                         <span class="text" id="textForD">
                             Authority Approval
                         </span>
@@ -261,7 +261,7 @@
     <a href="./" class="block  mt-16 texts   text-lg">Home</a>
     <a href="./services.html" class="block texts text-lg">Services</a>
     <a href="./project.html" class="block texts text-lg">Projects</a>
-    <a href="#gov" class="block texts  text-lg">Authority Approval</a>
+    <a href="./authority.html" class="block texts  text-lg">Authority Approval</a>
     <a href="./career.html" class="block texts  text-lg">Career</a>
   </div>
   <!-- Overlay (optional, transparent effect) -->
@@ -272,13 +272,13 @@
                 <div class="flex flex-1 flex-col items-start p-8 mt-[150px]  sm:ml-[100px]">
                     <h2 class="sm:text-7xl font-light text-[25px] ">INTERIOR DESIGN</h2>
                     <h4 class="sm:text-4xl text-center sm:mt-8 mt-4 sm:mb-4 mb-2 bg-black bg-opacity-50 sm:w-[350px] text-[20px] w-[200px]">CONCEPT DESIGN</h4>
-                    <p style="font-family: FuturaBK !important;" class="sm:text-2xl text-[18px]">In mars space interior and contracting, a concept design refers to the foundational idea that drives the aesthetic, functional, and emotional aspects of an interior project.</p>
+                    <p style="font-family: FuturaBK !important;" class="sm:text-2xl text-[18px]">In Mars space interior and contracting, a concept design refers to the foundational idea that drives the aesthetic, functional, and emotional aspects of an interior project.</p>
                     <!-- <p style="font-family: FuturaBK !important;" class="text-2xl">design services, tailored to elevate your space</p> -->
                     <h4 class="sm:text-4xl text-center sm:mt-8 mt-4 sm:mb-4 mb-2 bg-black bg-opacity-50 sm:w-[350px] text-[20px] w-[200px]">SCHEMTIC DESIGN</h4>
-                    <p style="font-family: FuturaBK !important;" class="sm:text-2xl text-[18px]">Indulge in the elegance of our bespoke interior design services, tailored to elevate your space</p>
+                    <p style="font-family: FuturaBK !important;" class="sm:text-2xl text-[18px]">Indulge in the elegance of our bespoke interior design services, tailored to elevate your space.</p>
                     <!-- <p style="font-family: FuturaBK !important;">design services, tailored to elevate your space</p> -->
                     <h4 class="sm:text-4xl text-center sm:mt-8 mt-4 sm:mb-4 mb-2 bg-black bg-opacity-50 sm:w-[350px] text-[20px] w-[200px]">3D VISUALIZATION</h4>
-                    <p style="font-family: FuturaBK !important;" class="sm:text-2xl text-[18px] leading-[1.3rem] leading-8">3D visualization in MSc Interior Design refers to the digital representation of interior spaces in three dimensions, created to simulate real-world conditions.</p>
+                    <p style="font-family: FuturaBK !important;" class="sm:text-2xl text-[18px] leading-[1.3rem] leading-8">3D visualization in Mars space interior and contracting refers to the digital representation of interior spaces in three dimensions, created to simulate real-world conditions.</p>
                     <!-- <p style="font-family: FuturaBK !important;">design services, tailored to elevate your space</p> -->
                 </div>
                 <!-- <div class="flex-1 h-screen mt-[250px]">
@@ -323,10 +323,21 @@
         </section>
     </div>
 
-    <div class="bg-black" id="things">
-        <section class="flex flex-col justify-center  items-center">
-            <h2 class="sm:text-7xl font-light mb-8 mt-[50px] text-[25px] text-center">MASTERING INTERIOR & ARCTHITECTURE</h2>
-            <div class="grid sm:grid-cols-4 sm:gap-8 gap-5 sm:mt-8 mt-4 mb-8 grid-cols-2">
+    <div class="bg-black " id="things">
+        <section class="flex flex-col justify-center items-center">
+            <h2 class="sm:text-5xl font-light mb-4 mt-[50px] text-[25px] text-center " style="font-family: 'EurostileBQ' !important;">MASTERING INTERIOR & ARCTHITECTURE</h2>
+            <h2 class="sm:text-7xl font-light mb-8 mt-[50px] text-[25px] text-center ">Services</h2>
+            <ul class="p-8 w-full text-left flex flex-col  items-start text-4xl pl-[170px] gap-4 mt-10 " style="list-style:circle;" >
+            <li class="text-left">RESIDENTIAL</li>
+            <li class="text-left">CORPORATE</li>
+            <li class="text-left">HOSPITALITY</li>
+            <li class="text-left">RETAIL</li>
+            <li class="text-left">HOSPITAL & CLINIC</li>
+            <li class="text-left">SWIMMING POOLS</li>
+            <li class="text-left">RESTURANT & FMGC</li>
+            <li class="text-left">CONSTRUCTION</li>
+            </ul>
+            <div class="grid sm:grid-cols-4 sm:gap-8 gap-5 sm:mt-8 mt-4 mb-8 grid-cols-2 ">
                 <div class="sm:p-8 p-3 text-center">
                     <img src="./images/large-house-with-pool-palm-trees-background-copy.png" alt="">
                     <p class="sm:mt-[30px] mt-5 text-center text text-[15px] sm:text-base">RESIDENTIAL</p> 
@@ -361,8 +372,8 @@
                 </div>
             </div>
         </section>
-        <section class="flex justify-center items-center mt-[5px] sm:mb-[200px] px-3 sm:px-0">
-            <img src="./images/EidtedVideo.png" alt="What We Do" class="sm:w-[90vw] sm:h-[80vh] sm:object-cover object-contain">
+        <section class="flex justify-center items-center mt-[5px] sm:mb-[200px] px-3 sm:px-0 ">
+            <img src="./images/EidtedVideo.png" alt="What We Do" class="sm:w-[90vw] sm:h-[100vh] sm:object-cover object-contain">
         </section>
         <div class="grid sm:grid-cols-2 sm:gap-24 gap-8 grid-cols-1 p-8 sm:ml-[50px] sm:mt-[100px] mt-5 sm:mr-[50px] sm:mb-[200px] mb-5">
             <div class="col-span-1">
@@ -384,12 +395,12 @@
         </div>
     </div>
 
-     <footer class="flex justify-center items-center sm:items-start sm:h-screen bg-black text-white h-full">
+     <footer class="flex justify-center items-center sm:items-end am:pb-7 pb-0 sm:h-screen bg-black text-white h-full">
         <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 p-8 text-center">
             <div class="sm:mt-[100px] text-left ">
                 <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[40px] tracking-[4px] text-[#fcfad8]">PHONE</h3>
                 <ul>
-                    <li><a href="#" id="textForP"  class=" text-xs">+971589653760</a></li>
+                    <li><a href="#" id="textForP"  class=" text-xs">+9123457869</a></li>
                 </ul>
             </div>
             <div class="sm:mt-[100px]  text-left ">

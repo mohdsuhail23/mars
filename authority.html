@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authority | Mars Space Interiors</title>
+     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        html {
+  scroll-behavior: smooth;
+  transition: 0.8s;
+}
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: 'Deradioh';
+            src: url('./font/Deradioh.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'EurostileBQ';
+            src: url('./font/EurostileBQ-Extended.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'FuturaBK';
+            src: url('./font/FuturaBkBTBook.ttf') format('truetype');
+        }
+       
+        
+        .main-bg{
+font-family: 'Deradioh' !important;
+            background-image: url('./images/Background.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        p{
+            font-family: 'EurostileBQ' !important;
+        }
+        
+        /* #logo {
+            width: 80px !important;
+            margin-top: -25px !important;
+        } */
+        #btn {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+         /* a>span{
+            font-size: 25px;
+        } */
+        #textForD{
+            font-family: 'Deradioh' !important;
+            font-size: 26;
+            font-weight: 100;
+        }
+      
+        #projectFg {
+            width: 900px;
+            height: 900px;
+            object-fit: cover;
+        }
+        footer {
+            background-image: url('./images/footer.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            /* height: 40vh; Reduced height */
+            background-size: 100% 100%; /* Reduced width */
+            height: 100vh;
+        }
+        .text {
+            /* transform: translateX(-50%); */
+            font-weight: bold;
+            /* color: #ffb400; */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .text:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .texts:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .text:hover::before {
+            content: "[";
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+        .text:hover::after {
+            content: "]";
+            transition: all 0.3s ease-in-out;
+            margin-left: 10px;
+        }
+        
+        #textForP{
+            font-family: 'FuturaBK' !important;
+            font-size: 25px;
+            font-weight: 100;
+            color: #fcfad8;
+        }
+       
+         
+        .auth-heading li{
+           margin: 2rem 0;
+        }
+
+    /* css for  mobile */
+
+    @media only screen and (max-width: 600px){
+
+        footer {
+            background-image: url('./imagesformobile/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+         
+            
+        }
+        #textForP{
+            font-size: 15px;
+        }
+
+    }
+
+ 
+
+    </style>
+</head>
+<body class="text-white font-sans ">
+
+    <section class="main-bg w-full h-full">
+
+      <div id="main">
+       <header class=" hidden  md:flex justify-center items-center p-6 absolute w-full 2xl:mt-8 mt-5">
+            <nav>
+                <ul class="flex space-x-24  text-[18px] 2xl:text-[25px]">
+                    <li><a href="./">
+                        <span class="text" id="textForD">
+                            Home
+                        </span>
+                    </a></li>
+                    <li><a href="./services.html">
+                        <span class="text" id="textForD">
+                            Services
+                        </span>
+                    </a></li>
+                    <li><a href="./project.html">
+                        <span class="text" id="textForD">
+                            Projects
+                        </span>
+                    </a></li>
+                    <img id="logo" class="2xl:w-[80px] 2xl:mt-[-25px] w-[50px] mt-[-14px]"  src="./images/logo.png" alt="">
+                    <li><a href="./authority.html">
+                        <span class="text" id="textForD">
+                            Authority Approval
+                        </span>
+                    </a></li>
+                    <li><a href="./career.html">
+                        <span class="text" id="textForD">
+                            Career
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- Mobile Header -->
+<div class="md:hidden mt-4  fixed w-full top-0 left-0 z-50 flex items-center justify-between px-4 py-4 bg-transparent backdrop-blur-sm">
+    <!-- Logo -->
+    <img src="./images/logo.png" alt="Logo" class="h-10">
+  
+    <!-- Menu Toggle Button -->
+    <button id="mobile-menu-btn">
+      <!-- Hamburger Icon -->
+      <svg id="hamburger-icon" class="w-9 h-9 text-[#fcfad8]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Close Icon (hidden by default) -->
+      <svg id="close-icon" class="w-9 h-9 text-[#fcfad8] hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Mobile Sidebar (from right) -->
+  <div id="mobile-sidebar" class="fixed top-0 right-0 w-64 h-full bg-transparent backdrop-blur-lg transform translate-x-full transition-transform duration-300 z-40 p-6 space-y-6">
+    <a href="./" class="block  mt-16 texts   text-lg">Home</a>
+    <a href="./services.html" class="block texts text-lg">Services</a>
+    <a href="./project.html" class="block texts text-lg">Projects</a>
+    <a href="./authority.html" class="block texts  text-lg">Authority Approval</a>
+    <a href="./career.html" class="block texts  text-lg">Career</a>
+  </div>
+  <!-- Overlay (optional, transparent effect) -->
+  <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden z-30"></div>
+    </div>
+
+    <section class=" sm:pt-[10rem] w-full h-full h-screen ">
+        <div class=" sm:p-0 sm:pl-[180px] p-8  flex sm:flex-row flex-col sm:justify-around  h-full w-full gap-20 sm:gap-0  ">
+         <!-- left section -->
+         <div class="w-full h-full sm:pt-[11rem] pt-[8rem]">
+            <h2 class="sm:text-7xl font-light text-[30px]">AUTHORITIES <br>APPROVAL</h2>
+            <P class="mt-8 sm:text-2xl text-[18px] text-[#fcfad8]" style="font-family: FuturaBK !important;">Mars Space Interiors manages <br class="sm:hidden"> end-to-end approval <br class="hidden sm:block"> processes <br class="sm:hidden"> with all major Dubai authorities- <br class="sm:hidden">fast, <br class="hidden sm:block" > compliant, and stress-free.</P>
+         </div>
+
+         <!-- right section -->
+<div class=" w-full h-full">
+  <img src="./images/forground.png" alt="What We Do" 
+                        class="sm:w-[600px] w-[350px] h-[250px] sm:h-[500px] object-cover  sm:mr-[500px] sm:mt-[100px]  transition-transform duration-300 hover:scale-110">
+</div>
+
+         
+        </div>
+    </section>
+
+    <div class="w-full h-full p-8 pt-0">
+        <ul class="auth-heading sm:pl-[150px] sm:text-3xl" style="font-family: 'EurostileBQ' !important; list-style: circle;">
+            <li>DUBAI MUNICIPALITY (DM)</li>
+            <li>DUBAI CIVIL DEFENSE (DCD)</li>
+            <li>DEWA (ELECTRICITY & WATER)</li>
+            <li>RTA (ROAD & TRANSPORT)</li>
+            <li>DHA (HEALTH AUTHORITY)</li>
+            <li>DDA (DUBAI DEVELOPMENT AUTHORITY)</li>
+            <li>DIFC</li>
+            <li>DIEZ</li>
+            <li>DWC</li>
+            <li>TRAHHEES</li>
+            <li>NAHHEEL</li>
+            <li>EMAAR</li>
+            <li>DAMAC</li>
+            <li>CONCORDIA</li>
+            <li>SPORTS CITY</li>
+            <li>LOAMS</li>
+            <li>JAFZA</li>
+            <li>DM HEALTH AND SAFETY</li>
+            <li>DM FOOD PERMITS</li>
+        </ul>
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+ <footer class="flex justify-center items-center sm:items-end am:pb-7 pb-0 sm:h-screen bg-black text-white h-full">
+        <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 p-8 text-center">
+            <div class="sm:mt-[100px] text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[40px] tracking-[4px] text-[#fcfad8]">PHONE</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class=" text-xs">+9123457869</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 sm:mr-[85px] tracking-[4px] text-[#fcfad8]">E-MAIL</h3>
+                <ul>
+                    <li><a href="#" id="textForP"  class="text-xs">info@marsspace.ae</a></li>
+                </ul>
+            </div>
+            <div class="sm:mt-[100px] mt-4 sm:ml-[60px]  text-left ">
+                <h3 class="sm:text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">LOCATION</h3>
+                <ul>
+                    <li>
+                        <p class="sm:text-justify text-xs leading-8" id="textForP" >GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="sm:mt-[100px] mt-5 text-left sm:text-center">
+                <h3 class="sm:text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8] ">GET SOCIAL</h3>
+                <ul class="flex justify-start sm:justify-center space-x-4">
+                    <li><a href="https://www.instagram.com/marspaceinteriors/?hl=en" target="_blank"><img src="./images/instagram.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" class="sm:w-8 w-6"></a></li>
+                    <li><a href="#"><img src="./images/whatsapp.png" alt="" class="sm:w-8 w-6"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  
+
+
+    <script>
+        const menuBtn = document.getElementById("mobile-menu-btn");
+  const sidebar = document.getElementById("mobile-sidebar");
+  const overlay = document.getElementById("overlay");
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = sidebar.classList.contains("translate-x-0");
+
+    // Toggle sidebar
+    sidebar.classList.toggle("translate-x-full");
+    sidebar.classList.toggle("translate-x-0");
+
+    // Toggle overlay
+    overlay.classList.toggle("hidden");
+
+    // Swap icons
+    hamburgerIcon.classList.toggle("hidden");
+    closeIcon.classList.toggle("hidden");
+  });
+
+  // Close when clicking overlay
+  overlay.addEventListener("click", () => {
+    sidebar.classList.add("translate-x-full");
+    sidebar.classList.remove("translate-x-0");
+    overlay.classList.add("hidden");
+
+    hamburgerIcon.classList.remove("hidden");
+    closeIcon.classList.add("hidden");
+  });
+    </script>
+
+</body>
+</html>
