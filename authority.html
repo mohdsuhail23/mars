@@ -111,6 +111,24 @@ font-family: 'Deradioh' !important;
            margin: 2rem 0;
         }
 
+
+         .video-bg {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+     .content {
+      position: absolute;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 30%;
+      left: 0;
+      font-size: 2rem;
+    }
+
     /* css for  mobile */
 
     @media only screen and (max-width: 600px){
@@ -243,6 +261,20 @@ font-family: 'Deradioh' !important;
         </ul>
     </div>
     </section>
+
+    <div class="w-full h-full relative ">
+        <video  class="video-bg" autoplay loop muted playsinline>
+  <source src="./images/video for sex.mp4" type="video/mp4">
+
+</video>
+
+ <div class="content w-full ">
+    <h2 class="center w-full mx-auto 2xl:text-7xl sm:text-5xl text-lg" style="font-family: 'EurostileBQ' !important">Authority Approval</h2>
+    <p class="mt-20 sm:text-2xl text-[18px] w-1/2 mx-auto" style="font-family: FuturaBK !important;" id="textForP">We handle the entire approval process— from drawings and documentation to compliance checks—ensuring your project proceeds smoothly, without delays. Our long-standing relationships with government bodies and consultants enable us to fast-track submissions and secure approvals efficiently and professionally.</p>
+  </div>
+    </div>
+
+    
 
 
     <!-- Footer -->
